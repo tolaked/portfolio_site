@@ -88,8 +88,8 @@ const About = () => {
           <br></br>
           Through my experience at Lambda School, I've acquired the necessary skills and
           knowledge of modern web technologies needed to build web applications to solve problems.
-          While hard engineering problems are often intrisically fun to tackle, I'm most attracted to solving real time problems. I'm looking for a software developer role where I can take on a major role in the development team, and gain relevant experience in software engineering.
-          I am often captivated by new technologies and tools, as I like to always like to keep abreast with the latest technologies to update my skill set.
+          While hard engineering problems are often intrinsically fun to tackle, I'm most attracted to solving real-time problems. I'm looking for a software engineer role where I can take on a major role in the development team, and gain relevant experience in software engineering.
+          I am often captivated by new technologies and tools, as I like to always like to keep abreast of the latest technologies to update my skill set.
           
         </p>
         <div className="imgDiv">
