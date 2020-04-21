@@ -155,7 +155,7 @@ const Projects = () => {
           </svg>
         </div>
         <div className="imgDiv">
-          <img src={communityCalendar} />
+          <img src={communityCalendar} alt="community calendar"/>
         </div>
       </div>
       <div className="projectContainer">
@@ -174,7 +174,6 @@ const Projects = () => {
             <h4>MongoDB</h4>
             <h4>Redux</h4>
             <h4>Styled components</h4>
-            <h4></h4>
           </div>
           <svg
             id="Capa_1"
@@ -197,7 +196,7 @@ const Projects = () => {
           </svg>
         </div>
         <div className="imgDiv">
-          <img src={drugPrescription} />
+          <img src={drugPrescription} alt="prescriptions"/>
         </div>
       </div>
       <div className="projectContainer">
@@ -210,8 +209,8 @@ const Projects = () => {
             </p>
           </div>
           <div className="techDiv techDiv2">
-            <h4>Html</h4>
-            <h4>Css</h4>
+            <h4>HTML</h4>
+            <h4>CSS</h4>
             <h4>Javascript</h4>
           </div>
           <svg
@@ -235,7 +234,7 @@ const Projects = () => {
           </svg>
         </div>
         <div className="imgDiv">
-          <img src={quickCredit} />
+          <img src={quickCredit} alt="quick credit"/>
         </div>
       </div>
     </ProjectStyled>

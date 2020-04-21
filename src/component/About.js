@@ -1,9 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import profileImage from '../images/Tola.jpeg'
+import devices from "../utils/devices";
 
 
 const AboutMeStyled = styled.div`
+  @media ${devices.large} {
+    height: auto;
+  }
  h1 {
     margin-bottom: 15vh;
     font-weight: 900;

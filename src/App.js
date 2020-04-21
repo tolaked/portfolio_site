@@ -4,6 +4,7 @@ import About from './component/About';
 import FirstSection from './component/FirstSection'
 import Projects from './component/Projects'
 import Blogs from './component/Blogs'
+import Contact from './component/Contact'
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
      <About/>
      <Blogs/>
      <Projects/>
+     <Contact/>
     </div>
   );
 }

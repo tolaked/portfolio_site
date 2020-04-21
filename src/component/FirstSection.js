@@ -92,7 +92,7 @@ const FirstSection = () => {
         </h3>
         <div className="about">
           <div className="button">
-            <a href={resume} target="_blank" rel="noopener">
+            <a href={resume} target="_blank" rel="noopener noreferrer">
               View Resume
             </a>
           </div>
