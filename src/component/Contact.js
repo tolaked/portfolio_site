@@ -5,7 +5,7 @@ import devices from "../utils/devices";
 const ContactStyled = styled.div`
   margin-top: 150vh;
   height: 90vh;
-  padding-top: 15rem;
+  padding-top: 10rem;
   position: relative;
 
   @media ${devices.large} {
@@ -75,7 +75,7 @@ const ContactStyled = styled.div`
 
 const Contact = () => {
   return (
-    <ContactStyled id="contact-me">
+    <ContactStyled id="contact">
       <h1>
         <div className="lineStyle"></div>
         Get In Touch

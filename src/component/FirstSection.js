@@ -83,7 +83,7 @@ const TopStyled = styled.div`
 
 const FirstSection = () => {
   return (
-    <TopStyled id="contact">
+    <TopStyled>
       <div className="left-section">
         <h4>Hello, I'm</h4>
         <h1>Adetola Akere</h1>
