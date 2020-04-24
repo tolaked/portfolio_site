@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import profileImage from '../images/Tola.jpeg'
+import profileImage from '../images/akere.jpg'
 import devices from "../utils/devices";
 
 
@@ -54,6 +54,7 @@ const AboutMeStyled = styled.div`
       border-image: initial;
       overflow: hidden;
       margin: 0px;
+
      
 
       .imgWrapper {
@@ -61,10 +62,13 @@ const AboutMeStyled = styled.div`
         overflow: hidden;
         width: 100%;
         padding-bottom: 100%;
+        object-fit: cover;
+        object-position: center center
       }
       img {
         max-width: 100%;
-        max-height: 100%;
+        height: 350px;
+        object-fit: cover;
       }
     }
     p {
