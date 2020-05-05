@@ -8,12 +8,16 @@ const AboutMeStyled = styled.div`
   @media ${devices.large} {
     height: auto;
   }
+
  h1 {
     margin-bottom: 15vh;
     font-weight: 900;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media ${devices.mobile} {
+      margin-bottom: 5vh;
+      }
 
     .lineStyle {
       background-color: rgb(45, 57, 82);
@@ -43,7 +47,13 @@ const AboutMeStyled = styled.div`
     padding-right: 7rem;
     align-items: center;
     margin:0 auto;
-
+    @media ${devices.mobile} {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        padding-left: 5rem;
+    padding-right: 3rem;
+      }
     .imgDiv {
       width: 30rem;
       height: 30rem;
@@ -75,7 +85,11 @@ const AboutMeStyled = styled.div`
       width: 50%;
       text-align: left;
       font-size: 1.8rem;
-      color: #a0aec0
+      color: #a0aec0;
+      @media ${devices.mobile} {
+        width:100%;
+        margin-bottom:5vh;
+      }
     }
   }
 `;

@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React,{useState} from "react";
 import styled from "styled-components";
+import devices from "../utils/devices";
 import '../App.css'
 
 const NavStyled = styled.div`
@@ -17,9 +17,22 @@ const NavStyled = styled.div`
   width: 100%;
   z-index: 1000;
   overflow: hidden;
+  margin-left:-130px;
+  @media ${devices.mobile} {
+        width: 600px;
+        display: flex;
+
+      }
+
 
   .linkDiv {
     display: flex;
+    margin-right:-200px;
+    @media ${devices.mobile} {
+    display: none;
+    
+    width: 100%;
+  }
 
     .navLink {
       margin-left: 5rem;
@@ -45,11 +58,19 @@ const NavStyled = styled.div`
       justify-content:center;
       align-items:center;
       display:flex;
+      /* @media ${devices.mobile} {
+        float: left;
+      
+      } */
 
   }
 `;
 
 const Header = () => {
+  const [show, setShow] = useState(false)
+  const setToggle =()=>{
+    setShow(!show)
+  }
   return (
     <NavStyled>
       <div className="logo">
@@ -57,6 +78,40 @@ const Header = () => {
           AA
         </a>
       </div>
+
+      {/* Hamburger menu
+      <Icon type="menu" onClick={setToggle} className={show ? 'show' : null} />
+     
+        {show &&
+        (
+          <div>
+        <div>
+          <a href="#about"
+          rel="nofollow noopener noreferrer" className="linkStyle">
+            About
+          </a>
+        </div>
+        <div className="navLink">
+          <a href="#projects" className="linkStyle" >
+            Projects
+          </a>
+        </div>
+        <div className="navLink">
+          <a href="#contact" className="linkStyle">
+            Contact
+          </a>
+        </div>
+        <div className="navLink">
+        <a href="#blogs" className="linkStyle">
+            Blogs
+          </a>
+        </div>
+        </div>
+        )
+      } */}
+
+      {/* Hamburger Menu */}
+
       <div className="linkDiv">
         <div>
           <a href="#about"

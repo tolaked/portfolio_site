@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import devices from "../utils/devices";
 
 const Blogs = () => {
   const ProjectStyled = styled.div`
@@ -10,6 +11,9 @@ const Blogs = () => {
       display: flex;
       align-items: center;
       justify-content: center;
+      @media ${devices.mobile} {
+      margin-bottom: 5vh;
+      }
 
       .lineStyle {
         background-color: rgb(45, 57, 82);
@@ -20,12 +24,19 @@ const Blogs = () => {
         width: 20%;
       }
     }
-    .projectContainer {
+    .blogsContainer {
       width: 90%;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      @media ${devices.mobile} {
+        display: flex;
+      flex-direction: column;
+      margin-left:6rem;
+      
+      }
+      
 
       .textDiv {
         background: #2d3748;
@@ -39,6 +50,11 @@ const Blogs = () => {
         width: 48%;
         box-shadow: -2px 0px 1px 1px #2d3748;
         height: 38rem;
+        @media ${devices.mobile} {
+          margin-bottom: 5rem;
+          width: 98%;
+          height: 43rem;
+      }
 
         h4 {
           background: #2d3748;
@@ -92,7 +108,7 @@ const Blogs = () => {
         Blog Posts
         <div className="lineStyle"></div>
       </h1>
-      <div className="projectContainer">
+      <div className="blogsContainer">
         <div className="textDiv">
           <h4>
             Adaptation and how it has helped me overcome Bootcamp challenges

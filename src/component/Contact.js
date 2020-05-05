@@ -9,7 +9,7 @@ const ContactStyled = styled.div`
   position: relative;
 
   @media ${devices.large} {
-    margin-top: 0rem;
+    margin-top: 80vh;
     padding-top: 3rem;
     position: static;
     height: auto;
@@ -26,8 +26,7 @@ const ContactStyled = styled.div`
     justify-content: center;
 
     @media ${devices.mobile} {
-      font-size: 2rem;
-      margin-bottom: 3rem;
+      margin-bottom: 5vh;
     }
 
     .lineStyle {
@@ -49,8 +48,7 @@ const ContactStyled = styled.div`
 
     @media ${devices.mobile} {
       width: 100%;
-      margin-left: 0%;
-      padding: 1rem;
+      margin-left: 3rem;
     }
   }
   button {

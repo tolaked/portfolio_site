@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import resume from "../images/resume.jpg";
+import devices from "../utils/devices";
 
 const TopStyled = styled.div`
   display: flex;
@@ -11,18 +12,52 @@ const TopStyled = styled.div`
   margin: 0 auto;
   margin-top: 15rem;
   width: 100%;
+  /* @media ${devices.large} {
+    flex-direction: column;
+    align-items: center;
+    justify-content: none;
+    height: auto;
+  }
+
+  @media ${devices.tablet} {
+    flex-direction: column;
+    padding-top: 10rem;
+    align-items: center;
+    justify-content: none;
+    height: auto;
+  } */
+
+  @media ${devices.mobile} {
+    padding-top: 5rem;
+  }
 
   .left-section {
     width: 58%;
     margin-left: 10rem;
+    @media ${devices.mobile} {
+      margin-left: 5rem;;
+  }
     h1 {
       font-weight: 900;
       font-size: 60px;
+      @media ${devices.mobile} {
+        font-weight: 900;
+        font-size: 4rem;
+        width:350px
+      }
+
+
     }
 
     h3 {
       color: #ffffff;
       font-size: 2.2rem;
+      @media ${devices.mobile} {
+        font-weight: 300;
+        letter-spacing: 2px;
+        font-size: 18px;
+        width:400px;
+      }
     }
     h4 {
       color: #38b2ac;
@@ -52,6 +87,11 @@ const TopStyled = styled.div`
       display: flex;
       justify-content: space-between;
       margin-right: 50px;
+      @media ${devices.mobile} {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+      }
 
       .icons {
         margin-top: 3rem;
@@ -60,6 +100,10 @@ const TopStyled = styled.div`
         border-style: none;
         cursor: pointer;
         margin-right: 5rem;
+        @media ${devices.mobile} {
+        display:flex;
+        justify-content:center;
+      }
          
       }
       svg {
@@ -78,6 +122,7 @@ const TopStyled = styled.div`
           width:4rem;
         }
     }
+    
   }
 `;
 

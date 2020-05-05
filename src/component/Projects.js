@@ -3,6 +3,7 @@ import styled from "styled-components";
 import communityCalendar from "../images/community-calendar.PNG";
 import quickCredit from "../images/quick-credit.PNG";
 import drugPrescription from "../images/drug-prescription.PNG";
+import devices from "../utils/devices";
 
 const ProjectStyled = styled.div`
   height: 100vh;
@@ -14,6 +15,10 @@ const ProjectStyled = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media ${devices.mobile} {
+      margin-bottom: 5vh;
+      
+      }
 
     .lineStyle {
       background-color: rgb(45, 57, 82);
@@ -32,11 +37,19 @@ const ProjectStyled = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7rem;
+    @media ${devices.mobile} {
+        margin-left: 5rem;
+      
+      }
 
     .imgDiv {
       position: absolute;
       width: 50%;
       margin-left: 50%;
+      @media ${devices.mobile} {
+        display: none;
+      
+      }
 
       img {
         max-width: 100%;
@@ -53,6 +66,13 @@ const ProjectStyled = styled.div`
       width: 60%;
       box-shadow: -2px 0px 1px 1px #2d3748;
       height: 40rem;
+      @media ${devices.mobile} {
+        width: 100%;
+        text-align:center;
+        padding:10px;
+      
+      }
+      
 
       h4 {
         background: #2d3748;
@@ -70,6 +90,12 @@ const ProjectStyled = styled.div`
         background: #2d3748;
         margin-bottom: 2rem;
         width: 70%;
+        @media ${devices.mobile} {
+        width: 100%;
+        display: flex;
+        justify-content:center
+      
+      }
 
         h4 {
           margin-right: 2.5rem;
@@ -77,15 +103,15 @@ const ProjectStyled = styled.div`
         }
       }
 
-      .techDiv2 {
-        margin-top: 11rem;
-        margin-bottom: 2rem;
-      }
-
       .descriptionDiv {
         margin-top: 4rem;
         width: 85%;
         margin-bottom: 4rem;
+        @media ${devices.mobile} {
+        width: 100%;
+        
+      
+      }
         p {
           background: #2d3748;
           color: #a0aec0;
@@ -117,8 +143,8 @@ const Projects = () => {
       </h1>
       <div className="projectContainer">
         <div className="textDiv">
-          <h4>Community calendar</h4>
-          <h3>DevCoach</h3>
+          <h4>Featured Project</h4>
+          <h3>Community calendar</h3>
           <div className="descriptionDiv">
             <p>
             A local event app serving municipalities and neighborhoods. A web application that serves mainly as events aggregator. 
@@ -167,12 +193,12 @@ const Projects = () => {
               A web application that helps users keep track of their drug usage.
             </p>
           </div>
-          <div className="techDiv techDiv2">
+          <div className="techDiv">
             <h4>React</h4>
             <h4>Node.js</h4>
             <h4>Express</h4>
-            <h4>MongoDB</h4>
             <h4>Redux</h4>
+            <h4>MongoDB</h4>
             <h4>Styled components</h4>
           </div>
           <svg
@@ -208,7 +234,7 @@ const Projects = () => {
              A web application designed to offer quick loans to low income earners.
             </p>
           </div>
-          <div className="techDiv techDiv2">
+          <div className="techDiv">
             <h4>HTML</h4>
             <h4>CSS</h4>
             <h4>Javascript</h4>
