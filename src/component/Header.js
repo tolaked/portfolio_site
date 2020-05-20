@@ -1,5 +1,9 @@
 import React,{useState} from "react";
 import styled from "styled-components";
+import Button from '@material-ui/core/Button';
+import Menu from '@material-ui/core/Menu';
+import MenuItem from '@material-ui/core/MenuItem';
+
 import devices from "../utils/devices";
 import '../App.css'
 
@@ -14,7 +18,7 @@ const NavStyled = styled.div`
   height: 65px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 1400px;
   z-index: 1000;
   overflow: hidden;
   margin-left:-130px;
@@ -67,10 +71,8 @@ const NavStyled = styled.div`
 `;
 
 const Header = () => {
-  const [show, setShow] = useState(false)
-  const setToggle =()=>{
-    setShow(!show)
-  }
+
+  
   return (
     <NavStyled>
       <div className="logo">
