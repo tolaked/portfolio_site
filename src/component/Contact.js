@@ -8,6 +8,10 @@ const ContactStyled = styled.div`
   padding-top: 10rem;
   position: relative;
 
+  @media ${devices.mobile} {
+      margin-top: 1000px;
+    }
+
   @media ${devices.large} {
     margin-top: 80vh;
     padding-top: 3rem;
@@ -17,6 +21,7 @@ const ContactStyled = styled.div`
   @media ${devices.tablet} {
     position: static;
   }
+ 
 
   h1 {
     margin-bottom: 15vh;
@@ -26,7 +31,7 @@ const ContactStyled = styled.div`
     justify-content: center;
 
     @media ${devices.mobile} {
-      margin-bottom: 5vh;
+      margin-top: 45vh;
     }
 
     .lineStyle {
@@ -67,6 +72,11 @@ const ContactStyled = styled.div`
 
     :hover {
       background: #a0aec0;
+    }
+    @media ${devices.mobile} {
+      width: 60%;
+      margin-left: 7rem;
+      
     }
   }
 `;
