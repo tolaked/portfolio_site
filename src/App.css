@@ -1,10 +1,10 @@
 .App {
   text-align: center;
   color: white;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background: #080a16; 
+  background: #080a16;  
 }
 
 .App-logo {
@@ -33,3 +33,11 @@
   color: #61dafb;
 }
 
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
