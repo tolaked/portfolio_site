@@ -79,7 +79,7 @@ function Navigation() {
     <NavStyled>
       <div className="logoDiv">
         <a href="#" className="linkStyle">
-          <img src={myLogo} style={{marginTop:"20px"}}/>
+          <img src={myLogo} style={{marginTop:"20px"}} alt="logo"/>
         </a>
       </div>
       <div className="linkDiv">

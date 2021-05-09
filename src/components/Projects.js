@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import devCoach from "../img/dev-coach.png";
-import rickMorty from "../img/rickandmorty.PNG";
-import vacationPlanner from "../img/vacation-planner.PNG";
-import crpytoTracker from "../img/crypto.PNG";
 import hydrogenHr from "../img/hydrogenHR.png";
-import todo from "../img/todo-app.PNG";
 import devices from "../utils/devices";
 import Computer from "../img/Computer.png"
 

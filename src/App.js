@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import Animate from "react-simple-animate";
 import Navigation from "./components/Nav";
 import TopSection from "./components/TopSection";
 import AboutMe from "./components/AboutMe";

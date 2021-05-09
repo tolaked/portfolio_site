@@ -64,12 +64,12 @@ const FooterStyled = styled.div`
 const Footer = () => {
   return (
     <FooterStyled>
-      <a href="https://github.com/Funmi7/portfolio" target="_blank">
+      <a href="https://github.com/Funmi7/portfolio" target="_blank" rel="noopener noreferrer">
         <p>Designed and built by Adetola Akere</p>
       </a>
       <p className="icons">
         Icons used got from
-        <a href="https://konpa.github.io/devicon/" target="_blank"><span> DevIcon</span></a>,  <a href="https://www.flaticon.com/" target="_blank"><span>FlatIcon</span></a> and         <a href="https://www.iconfinder.com/" target="_blank"><span>IconFinder</span></a>
+        <a href="https://konpa.github.io/devicon/" target="_blank" rel="noopener noreferrer"><span> DevIcon</span></a>,  <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer"><span>FlatIcon</span></a> and         <a href="https://www.iconfinder.com/" target="_blank" rel="noopener noreferrer"><span>IconFinder</span></a>
       </p>
     </FooterStyled>
   );

@@ -7,8 +7,7 @@ import nodeIcon from "../img/nodejsIcon.svg";
 import pythonIcon from "../img/pythonIcon.svg";
 import reactIcon from "../img/reactIcon.svg";
 import gitIcon from "../img/gitIcon.svg";
-import devices from "../utils/devices";
-import Node from "../img/nodejs.svg"
+import devices from "../utils/devices"
 
 const SkillStyled = styled.div`
   height: 100vh;
@@ -75,27 +74,27 @@ const Skills = () => {
       </h1>
       <div className="firstSet">
         <div className="iconDiv">
-          <img src={html5Icon} />
+          <img src={html5Icon} alt="html5"/>
         </div>
         <div className="iconDiv">
-          <img src={css3Icon} />
+          <img src={css3Icon} alt="css3"/>
         </div>
         <div className="iconDiv">
-          <img src={jsIcon} />
+          <img src={jsIcon} alt="jsicon"/>
         </div>
         <div className="iconDiv">
-          <img src={reactIcon} />
+          <img src={reactIcon} alt="reacticon"/>
         </div>
       </div>
       <div className="secondSet">
         <div className="iconDiv">
-          <img src={nodeIcon} alt='node icon' />
+          <img src={nodeIcon} alt='node icon'/>
         </div>
         <div className="iconDiv">
-          <img src={pythonIcon} />
+          <img src={pythonIcon} alt="python"/>
         </div>
         <div className="iconDiv">
-          <img src={gitIcon} />
+          <img src={gitIcon} alt="giticon"/>
         </div>
      
       </div>
