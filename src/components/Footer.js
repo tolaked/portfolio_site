@@ -64,7 +64,7 @@ const FooterStyled = styled.div`
 const Footer = () => {
   return (
     <FooterStyled>
-      <a href="https://github.com/Funmi7/portfolio" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/tolaked/portfolio_site" target="_blank" rel="noopener noreferrer">
         <p>Designed and built by Adetola Akere</p>
       </a>
       <p className="icons">
